@@ -29,10 +29,10 @@ public class Function {
     public Student addStudent(ArrayList<Student> stList){
         Student st = null;
         Scanner scan = new Scanner(System.in);
-        // Thực hiện nhập thông tin của học sinh
-        System.out.println("Enter student information");
+        // Thực hiện nhập thông tin của tướng
+        System.out.println("Vui lòng nhập thông tin: ");
         // ID của học sinh
-        System.out.println("Student ID: ");
+        System.out.println("ID: ");
         String id; 
         String name;
         int index;
