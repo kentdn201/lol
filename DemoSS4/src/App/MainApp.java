@@ -29,7 +29,8 @@ public class MainApp {
             System.out.println("2. Show Champion");
             System.out.println("3. Delete Champion");
             System.out.println("4. Edit Champion");
-            System.out.println("5. Exit");
+            System.out.println("5. Search Champion");
+            System.out.println("6. Exit");
             
             int choice = scan.nextInt();
             switch(choice){
@@ -67,7 +68,12 @@ public class MainApp {
                     }
                     break;
                 }
-                case 5:
+                    case 5:
+            {
+                f.Search(stList);
+            break;
+            }
+                case 6:
                 {
                     System.exit(0);
                     break;
