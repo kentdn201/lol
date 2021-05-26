@@ -25,10 +25,10 @@ public class MainApp {
             Scanner scan = new Scanner(System.in);
             // Menu chọn tính năng
             System.out.println("Choose Function");
-            System.out.println("1. Add Student");
-            System.out.println("2. Show Student");
-            System.out.println("3. Delete Student");
-            System.out.println("4. Edit Student");
+            System.out.println("1. Add Champion");
+            System.out.println("2. Show Champion");
+            System.out.println("3. Delete Champion");
+            System.out.println("4. Edit Champion");
             System.out.println("5. Exit");
             
             int choice = scan.nextInt();
