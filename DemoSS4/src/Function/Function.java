@@ -31,8 +31,6 @@ public class Function {
         Scanner scan = new Scanner(System.in);
         // Thực hiện nhập thông tin của học sinh
         System.out.println("Enter thông tin tướng");
-        // ID của học sinh
-        System.out.println("Tướng ID: ");
         String id; 
         String name;
         String type;
