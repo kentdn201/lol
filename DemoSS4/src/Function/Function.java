@@ -180,11 +180,11 @@ public class Function {
     String id  = se.nextLine();
     int index = checkID( list,  id );
     if (index < 0){
-    System.out.println("Khong tim thay");
+    System.out.println("Khong tim thay tuong ");
     }
     else{
     Student st = list.get(index);    
-    System.out.println("Danh sach sinh vien dang co la :");
+    System.out.println("Danh sach tuong dang co la :");
     System.out.println("ID\tName\tHP\tMP\tATK\tDEF\tLoại\tLực chiến");
     System.out.println("=================================================");
     for (int i = 0; i < cpList.size(); i++) {
