@@ -174,7 +174,7 @@ public class Function {
         boolean b = m.matches();
         return b;
     }
-    public void Search(ArrayList<Champion> list){
+    public void Search(ArrayList<Champion> cpList){
     System.out.println("Nhap ID Tuong muon tim kiem: ");
     Scanner se =new Scanner(System.in);
     String id  = se.nextLine();
