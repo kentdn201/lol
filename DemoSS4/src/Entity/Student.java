@@ -12,6 +12,10 @@ package Entity;
 public class Student {
     public String id;
     public String name;
-    public String mail;
-    public float mark;
+    public String type;
+    public float hp;
+    public float mp;
+    public float atk;
+    public float def;
+    public float power;
 }
