@@ -187,13 +187,7 @@ public class Function {
     System.out.println("Danh sach tuong dang co la :");
     System.out.println("ID\tName\tHP\tMP\tATK\tDEF\tLoại\tLực chiến");
     System.out.println("=================================================");
-    for (int i = 0; i < cpList.size(); i++) {
-            System.out.println(cpList.get(i).id+"\t"
-                    +cpList.get(i).name+"\t"+cpList.get(i).hp
-                    +"\t"+cpList.get(i).mp +"\t"+cpList.get(i).atk
-            +"\t"+cpList.get(i).def +"\t"+cpList.get(i).type
-            +"\t"+cpList.get(i).power);
-        }
+    System.out.println(cp.id+"\t"+cp.name+"\t"+cp.hp+"\t"+cp.mp+"\t"+cp.atk+"\t"+cp.def+"\t"+cp.type+"\t"+cp.power);
     
     }
     }
