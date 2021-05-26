@@ -88,7 +88,7 @@ public class Function {
     // show toàn bộ học sinh đã thêm
     public void showAll(ArrayList<Champion> cpList){
         System.out.println("--List of Student--");
-        System.out.println("ID\tName\tMail\tMark");
+        System.out.println("ID\tName\tHP\tMP\tATK\tDEF\tLoại\tLực chiến");
         for (int i = 0; i < cpList.size(); i++) {
             System.out.println(cpList.get(i).id+"\t"
                     +cpList.get(i).name+"\t"+cpList.get(i).hp
