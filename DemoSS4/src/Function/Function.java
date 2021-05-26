@@ -87,7 +87,7 @@ public class Function {
     }
     // show toàn bộ học sinh đã thêm
     public void showAll(ArrayList<Champion> cpList){
-        System.out.println("--List of Student--");
+        System.out.println("--List of Champion--");
         System.out.println("ID\tName\tHP\tMP\tATK\tDEF\tLoại\tLực chiến");
         for (int i = 0; i < cpList.size(); i++) {
             System.out.println(cpList.get(i).id+"\t"
@@ -99,7 +99,7 @@ public class Function {
     }
     // xóa học sinh
     public boolean delChampion(ArrayList<Champion> cpList){
-        System.out.println("Nhập vào id của học sinh: ");
+        System.out.println("Nhập vào id của Tuong: ");
         Scanner scan = new Scanner(System.in);
         String id = scan.nextLine();
         int index = checkID(cpList, id);
@@ -173,5 +173,28 @@ public class Function {
         Matcher m = p.matcher(inp);
         boolean b = m.matches();
         return b;
+    }
+    public void Search(ArrayList<Champion> list){
+    System.out.println("Nhap ID Tuong muon tim kiem: ");
+    Scanner se =new Scanner(System.in);
+    String id  = se.nextLine();
+    int index = checkID( list,  id );
+    if (index < 0){
+    System.out.println("Khong tim thay");
+    }
+    else{
+    Student st = list.get(index);    
+    System.out.println("Danh sach sinh vien dang co la :");
+    System.out.println("ID\tName\tHP\tMP\tATK\tDEF\tLoại\tLực chiến");
+    System.out.println("=================================================");
+    for (int i = 0; i < cpList.size(); i++) {
+            System.out.println(cpList.get(i).id+"\t"
+                    +cpList.get(i).name+"\t"+cpList.get(i).hp
+                    +"\t"+cpList.get(i).mp +"\t"+cpList.get(i).atk
+            +"\t"+cpList.get(i).def +"\t"+cpList.get(i).type
+            +"\t"+cpList.get(i).power);
+        }
+    
+    }
     }
 }
