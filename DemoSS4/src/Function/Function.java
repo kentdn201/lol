@@ -178,12 +178,12 @@ public class Function {
     System.out.println("Nhap ID Tuong muon tim kiem: ");
     Scanner se =new Scanner(System.in);
     String id  = se.nextLine();
-    int index = checkID( list,  id );
+    int index = checkID( cpList,  id );
     if (index < 0){
     System.out.println("Khong tim thay tuong ");
     }
     else{
-    Champion cp = list.get(index);    
+    Champion cp = cpList.get(index);    
     System.out.println("Danh sach tuong dang co la :");
     System.out.println("ID\tName\tHP\tMP\tATK\tDEF\tLoại\tLực chiến");
     System.out.println("=================================================");
