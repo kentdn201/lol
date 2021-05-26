@@ -5,7 +5,7 @@
  */
 package App;
 
-import Entity.Student;
+import Entity.Champion;
 import Function.Function;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -18,7 +18,7 @@ public class MainApp {
     public static void main(String[] args) {
         // TODO code application logic here
         // Số học sinh có thể thêm
-        ArrayList<Student> stList = new ArrayList<Student>();
+        ArrayList<Champion> cpList = new ArrayList<Champion>();
         // số học sinh hiện tại
         Function f = new Function();
         while(true){
@@ -36,20 +36,20 @@ public class MainApp {
                 // Thêm học sinh 
                 case 1:
                 {
-                    Student st = f.addStudent(stList);
-                    stList.add(st);
+                    Champion cp = f.addChampion(cpList);
+                    cpList.add(cp);
                     break;
                 }
                 // Hiển thị toàn bộ học sinh vừa thêm
                 case 2:
                 {
-                    f.showAll(stList);
+                    f.showAll(cpList);
                     break;
                 }
                 // Thoát trương trình
                 case 3:
                 {
-                    boolean rs = f.delStudent(stList);
+                    boolean rs = f.delChampion(cpList);
                     if(rs){
                         System.out.println("Delete Success");
                     }else{
@@ -59,7 +59,7 @@ public class MainApp {
                 }
                 case 4:
                 {
-                    boolean update =f.updateStudent(stList);
+                    boolean update =f.updateChampion(cpList);
                     if(update){
                         System.out.println("Update Success");
                     }else{
