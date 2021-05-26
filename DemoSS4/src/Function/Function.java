@@ -183,7 +183,7 @@ public class Function {
     System.out.println("Khong tim thay tuong ");
     }
     else{
-    Student st = list.get(index);    
+    Champion cp = list.get(index);    
     System.out.println("Danh sach tuong dang co la :");
     System.out.println("ID\tName\tHP\tMP\tATK\tDEF\tLoại\tLực chiến");
     System.out.println("=================================================");
